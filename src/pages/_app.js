@@ -1,5 +1,13 @@
 import "@/styles/globals.css";
+import { ToastContainer } from "react-toastify";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+export default function App({ Component, pageProps }) {          // configuração toats reach
+  return <>                                                  
+  <ToastContainer 
+  position="top-right"
+  autoClose={5000}
+  theme="dark"
+  />
+  <Component {...pageProps} />
+  </>
 }
