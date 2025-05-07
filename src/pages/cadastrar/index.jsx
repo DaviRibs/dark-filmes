@@ -122,6 +122,7 @@ export default function Cadastrar() {
             <div className="w-full flex flex-col gap-2">
                 <label className="text-[17px] font-bold">Sinopse</label>
                 <textarea 
+                value={sinopse}
                 onChange={
                   (event) => setSinopse(event.target.value)
                 }
