@@ -27,7 +27,7 @@ export default function Cadastrar() {
         sinopse: sinopse,
         banner: banner
       })  
-      toast.sucess("Filme cadastro com sucesso!")
+      toast.success("Filme cadastro com sucesso!")
       setTitulo("");
       setDiretor("");
       setAno("0");
