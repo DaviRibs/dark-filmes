@@ -41,8 +41,8 @@ export default function Filme({ params }) {
             <div className="w-full h-[90%]">
               <img
                 className="w-full h-full rounded-lg object-cover"
-                src="https://th.bing.com/th/id/OIP.tdtt6i85QG9_3YlWYE6C7AAAAA?cb=iwp2&w=400&h=600&rs=1&pid=ImgDetMain"
-                alt=""
+                src={filme.banner}
+                alt={filme.titulo}
               />
             </div>
             <div className="w-full flex h-[10%] pt-4 justify-between">
@@ -57,27 +57,27 @@ export default function Filme({ params }) {
           <div className="w-[60%] pl-4  h-full flex flex-col">
             <div className="w-full flex gap-2 items-baseline">
               <h1 className="text-[35px] text-[#9B87F5] font-bold">
-                Interestelar
+                {filme.titulo}
               </h1>
-              <p className="text-[#8a898c] font-semibold text-[17px]">(2014)</p>
+              <p className="text-[#8a898c] font-semibold text-[17px]">{filme.ano}</p>
             </div>
             <div className="w-full gap-4 flex">
               <div className="py-1 px-4 rounded-2xl bg-[#4ade80]/20 text-[#4ade80]">
-                <p className="text-[17px]">10/10</p>
+                <p className="text-[17px]">{filme.nota}/10</p>
               </div>
               <div className="w-full gap-4 flex">
                 <div className="py-1 px-4 rounded-2xl bg-[#9b87f5]/20 text-[#9b87f5]">
-                  <p className="text-[17px]">Ficcão</p>
+                  <p className="text-[17px]">{filme.genero}</p>
                 </div>
               </div>
             </div>
             <div className="w-full flex flex-col mt-8">
               <h4 className="font-bold text-[20px]">Diretor</h4>
-              <p className="text-[#8a898c]">Não sei</p>
+              <p className="text-[#8a898c]">{filme.diretor}</p>
             </div>
             <div className="w-full flex flex-col mt-8">
               <h4 className="font-bold text-[20px]">Sinopse</h4>
-              <p className="text-[#8a898c]">Não sei</p>
+              <p className="text-[#8a898c]">{filme.sinopse}</p>
             </div>  
           </div>
         </div>
